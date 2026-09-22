@@ -1,8 +1,8 @@
 Model Stage,Model Name,Accuracy,Precision,Recall,F1-Score,ROC-AUC,PR-AUC,Pickle File
-Baseline,Logistic Regression,0.5168,0.1466,0.4693,0.2234,0.4976,0.1505,baseline_logistic_regression.pkl
-Baseline,Random Forest,0.7933,0.1576,0.0912,0.1155,0.5081,0.151,baseline_random_forest.pkl
-Baseline,HistGradientBoosting,0.4624,0.1444,0.534,0.2273,0.4937,0.147,baseline_hist_gradient_boosting.pkl
-Baseline,XGBoost,0.5567,0.1441,0.4035,0.2123,0.4951,0.1489,baseline_xgboost.pkl
-Baseline,Linear SVM (Calibrated),0.8519,0.0,0.0,0.0,0.5093,0.1533,baseline_calibrated_linearsvc.pkl
-Tuned,Tuned Random Forest,0.6294,0.1427,0.2999,0.1934,0.5028,0.1487,tuned_random_forest.pkl
-Tuned,Tuned XGBoost,0.5846,0.1462,0.3731,0.2101,0.4943,0.1502,tuned_xgboost.pkl
+Baseline,Logistic Regression,0.676,0.4458,0.6637,0.5334,0.7339,0.5116,baseline_logistic_regression.pkl
+Baseline,Random Forest,0.6867,0.4553,0.6246,0.5266,0.7279,0.5031,baseline_random_forest.pkl
+Baseline,HistGradientBoosting,0.6685,0.4388,0.6744,0.5317,0.7313,0.5064,baseline_hist_gradient_boosting.pkl
+Baseline,XGBoost,0.6719,0.4415,0.6637,0.5302,0.7298,0.5064,baseline_xgboost.pkl
+Baseline,Linear SVM (Calibrated),0.7485,0.6063,0.2811,0.3841,0.7339,0.5113,baseline_calibrated_linearsvc.pkl
+Tuned,Tuned Random Forest,0.6844,0.4528,0.629,0.5266,0.7289,0.5059,tuned_random_forest.pkl
+Tuned,Tuned XGBoost,0.669,0.4393,0.6738,0.5318,0.7329,0.5079,tuned_xgboost.pkl

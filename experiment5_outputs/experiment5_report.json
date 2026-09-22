@@ -1,0 +1,131 @@
+{
+    "experiment": "Experiment 5 - XAI and Fairness Audit",
+    "model_used": "XGBoost (baseline_xgboost.pkl)",
+    "sensitive_attribute": "customer_country",
+    "shap": {
+        "top_3_features": [
+            "discount_percent",
+            "rating",
+            "shipping_cost"
+        ],
+        "mean_abs_shap_top3": [
+            0.6300153732299805,
+            0.42477262020111084,
+            0.08028800040483475
+        ],
+        "all_feature_importance": {
+            "discount_percent": 0.6300153732299805,
+            "rating": 0.42477262020111084,
+            "shipping_cost": 0.08028800040483475,
+            "discount_amount": 0.0668088048696518,
+            "price_per_unit": 0.05372999235987663,
+            "price_per_rating": 0.0466310940682888,
+            "shipping_ratio": 0.041005611419677734,
+            "days_since_launch": 0.028002483770251274,
+            "order_amount_pre_discount": 0.02620624750852585,
+            "product_price": 0.023149341344833374,
+            "traffic_source_Direct": 0.014800786972045898,
+            "day_of_week": 0.013803757727146149,
+            "product_category_Home Decor": 0.013664042577147484,
+            "order_month": 0.012416930869221687,
+            "quantity": 0.009691402316093445,
+            "product_category_Fashion": 0.009068459272384644,
+            "traffic_source_Social Media": 0.007368867751210928,
+            "customer_country_India": 0.006892886012792587,
+            "traffic_source_Paid Ads": 0.006698376499116421,
+            "payment_method_PayPal": 0.006590128410607576,
+            "customer_country_Australia": 0.006200612057000399,
+            "payment_method_Debit Card": 0.006199402268975973,
+            "payment_method_Apple Pay": 0.005982808768749237,
+            "product_category_Electronics": 0.005583752412348986,
+            "product_category_Accessories": 0.003977648448199034,
+            "customer_country_Germany": 0.0037016249261796474,
+            "traffic_source_Organic": 0.0035160924308001995,
+            "product_category_Footwear": 0.0034220085944980383,
+            "customer_country_Canada": 0.0028352492954581976,
+            "customer_country_UAE": 0.0027884580194950104,
+            "payment_method_Credit Card": 0.0027592710684984922,
+            "payment_method_Cash on Delivery": 0.0024683030787855387,
+            "product_category_Sports": 0.0023240160662680864,
+            "traffic_source_Email": 0.001833840855397284,
+            "discount_tier_Low": 0.0015299594961106777,
+            "product_category_Beauty": 0.001515634125098586,
+            "high_value_order": 0.0011944238794967532,
+            "customer_country_USA": 0.0009857838740572333,
+            "customer_country_UK": 0.0007632295601069927,
+            "discount_tier_Medium": 0.00022565823746845126,
+            "discount_tier_High": 0.0,
+            "discount_tier_Unknown": 0.0,
+            "order_dayofweek": 0.0,
+            "calc_cost_gap": 0.0,
+            "is_weekend": 0.0
+        },
+        "plot_bar": "./experiment5_outputs\\shap_summary_bar.png",
+        "plot_beeswarm": "./experiment5_outputs\\shap_summary_beeswarm.png",
+        "dependence_plots": [
+            "./experiment5_outputs\\shap_dependence_discount_percent.png",
+            "./experiment5_outputs\\shap_dependence_rating.png",
+            "./experiment5_outputs\\shap_dependence_shipping_cost.png"
+        ]
+    },
+    "lime": {
+        "samples_explained": [
+            "high_confidence_return",
+            "high_confidence_non_return",
+            "borderline_prediction"
+        ],
+        "plots": {
+            "high_confidence_return": "./experiment5_outputs\\lime_high_confidence_return.png",
+            "high_confidence_non_return": "./experiment5_outputs\\lime_high_confidence_non_return.png",
+            "borderline_prediction": "./experiment5_outputs\\lime_borderline_prediction.png"
+        }
+    },
+    "fairness_before_mitigation": {
+        "demographic_parity_difference": 0.029844332313118282,
+        "demographic_parity_ratio": 0.9314640401388636,
+        "equalized_odds_difference": 0.07297089148115143
+    },
+    "fairness_after_mitigation": {
+        "demographic_parity_difference": 0.0033874586498407466,
+        "equalized_odds_difference": 0.07895065785494537,
+        "f1_score_post_mitigation": 0.5281892021022456
+    },
+    "per_group_metrics": {
+        "accuracy": {
+            "Australia": 0.6908482142857143,
+            "Canada": 0.6639102185469581,
+            "Germany": 0.6481159420289855,
+            "India": 0.6756282875511397,
+            "UAE": 0.6763865065751858,
+            "UK": 0.6901152213462705,
+            "USA": 0.6579417013682332
+        },
+        "recall": {
+            "Australia": 0.7062374245472837,
+            "Canada": 0.6643192488262911,
+            "Germany": 0.6332665330661322,
+            "India": 0.6415478615071283,
+            "UAE": 0.6560636182902585,
+            "UK": 0.6766595289079229,
+            "USA": 0.6688172043010753
+        },
+        "false_positive_rate": {
+            "Australia": 0.3150579150579151,
+            "Canada": 0.3362273086029992,
+            "Germany": 0.3458401305057096,
+            "India": 0.31065573770491806,
+            "UAE": 0.31540930979133225,
+            "UK": 0.30456852791878175,
+            "USA": 0.3462171052631579
+        },
+        "false_negative_rate": {
+            "Australia": 0.2937625754527163,
+            "Canada": 0.33568075117370894,
+            "Germany": 0.3667334669338677,
+            "India": 0.35845213849287166,
+            "UAE": 0.34393638170974156,
+            "UK": 0.3233404710920771,
+            "USA": 0.3311827956989247
+        }
+    }
+}

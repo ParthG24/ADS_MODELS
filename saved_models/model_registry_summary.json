@@ -1,15 +1,15 @@
 {
-    "selected_model": "HistGradientBoosting",
-    "selected_model_key": "baseline_hist_gradient_boosting",
+    "selected_model": "Logistic Regression",
+    "selected_model_key": "baseline_logistic_regression",
     "metrics": {
-        "accuracy": 0.46241666666666664,
-        "precision": 0.14440048691418136,
-        "recall": 0.53404614518852,
-        "f1": 0.22733261468439334,
-        "roc_auc": 0.4937400196220787,
-        "pr_auc": 0.14702762484231288
+        "accuracy": 0.676,
+        "precision": 0.4458266452648475,
+        "recall": 0.6636798088410991,
+        "f1": 0.5333653384541527,
+        "roc_auc": 0.7339252365873099,
+        "pr_auc": 0.5115516968320719
     },
-    "mlflow_run_id": "acaa354023e64fe895b1223553be3f50",
+    "mlflow_run_id": "586a8ca63c884d89a349388e68acf94d",
     "all_saved_pickles": {
         "Logistic Regression": "baseline_logistic_regression.pkl",
         "Random Forest": "baseline_random_forest.pkl",
