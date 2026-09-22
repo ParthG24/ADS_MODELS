@@ -1,0 +1,8 @@
+Model Stage,Model Name,Accuracy,Precision,Recall,F1-Score,ROC-AUC,PR-AUC,Pickle File
+Baseline,Logistic Regression,0.5168,0.1466,0.4693,0.2234,0.4976,0.1505,baseline_logistic_regression.pkl
+Baseline,Random Forest,0.7933,0.1576,0.0912,0.1155,0.5081,0.151,baseline_random_forest.pkl
+Baseline,HistGradientBoosting,0.4624,0.1444,0.534,0.2273,0.4937,0.147,baseline_hist_gradient_boosting.pkl
+Baseline,XGBoost,0.5567,0.1441,0.4035,0.2123,0.4951,0.1489,baseline_xgboost.pkl
+Baseline,Linear SVM (Calibrated),0.8519,0.0,0.0,0.0,0.5093,0.1533,baseline_calibrated_linearsvc.pkl
+Tuned,Tuned Random Forest,0.6294,0.1427,0.2999,0.1934,0.5028,0.1487,tuned_random_forest.pkl
+Tuned,Tuned XGBoost,0.5846,0.1462,0.3731,0.2101,0.4943,0.1502,tuned_xgboost.pkl

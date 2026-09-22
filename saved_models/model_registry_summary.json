@@ -1,0 +1,22 @@
+{
+    "selected_model": "HistGradientBoosting",
+    "selected_model_key": "baseline_hist_gradient_boosting",
+    "metrics": {
+        "accuracy": 0.46241666666666664,
+        "precision": 0.14440048691418136,
+        "recall": 0.53404614518852,
+        "f1": 0.22733261468439334,
+        "roc_auc": 0.4937400196220787,
+        "pr_auc": 0.14702762484231288
+    },
+    "mlflow_run_id": "acaa354023e64fe895b1223553be3f50",
+    "all_saved_pickles": {
+        "Logistic Regression": "baseline_logistic_regression.pkl",
+        "Random Forest": "baseline_random_forest.pkl",
+        "HistGradientBoosting": "baseline_hist_gradient_boosting.pkl",
+        "XGBoost": "baseline_xgboost.pkl",
+        "Linear SVM (Calibrated)": "baseline_calibrated_linearsvc.pkl",
+        "Tuned Random Forest": "tuned_random_forest.pkl",
+        "Tuned XGBoost": "tuned_xgboost.pkl"
+    }
+}

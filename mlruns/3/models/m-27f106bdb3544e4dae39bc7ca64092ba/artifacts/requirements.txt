@@ -1,0 +1,14 @@
+mlflow==3.16.1
+astunparse==1.6.3
+dill==0.4.1
+numpy==2.4.6
+pandas==2.3.3
+polars==1.19.0
+psutil==7.1.0
+pyarrow==21.0.0
+pytest==9.1.1
+scikit-learn==1.8.0
+scipy==1.17.1
+skops==0.15.0
+torch==2.8.0
+tqdm==4.67.1
