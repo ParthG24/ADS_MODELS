@@ -59,6 +59,19 @@ def get_model():
         if not os.path.exists(MODEL_PATH):
             raise FileNotFoundError(f"Model not found at {MODEL_PATH}")
         _model = joblib.load(MODEL_PATH)
+        # Compatibility patch across different scikit-learn versions
+        if hasattr(_model, "named_steps"):
+            for step in _model.named_steps.values():
+                if not hasattr(step, "multi_class"):
+                    try:
+                        step.multi_class = "auto"
+                    except Exception:
+                        pass
+        if not hasattr(_model, "multi_class"):
+            try:
+                _model.multi_class = "auto"
+            except Exception:
+                pass
     if _registry is None and os.path.exists(REGISTRY_PATH):
         with open(REGISTRY_PATH) as f:
             _registry = json.load(f)
