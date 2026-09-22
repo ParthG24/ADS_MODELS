@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/Krish Vinod/.gemini/antigravity-ide/scratch/ADS_MODELS/mlruns/5/models/m-e32c8901d03e4c9ca8d99e139a431b85/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+mlflow_version: 3.16.1
+model_id: m-e32c8901d03e4c9ca8d99e139a431b85
+model_size_bytes: 4479
+model_uuid: m-e32c8901d03e4c9ca8d99e139a431b85
+prompts: null
+run_id: 586a8ca63c884d89a349388e68acf94d
+utc_time_created: '2026-09-22 17:24:06.281882'

@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and virtual environments
+.pytest_cache/
+.ipynb_checkpoints/
+venv/
+env/
+
+# Scratch & generator tools
+scratch/
+
+# Text documentation guides & professor docs
+*Data_and_Guide.txt
+Docs/
